@@ -2,15 +2,17 @@
   "name": "tools.axross.me",
   "version": "0.0.0",
   "description": "",
+  "engines": {
+    "node": "~5.4.0"
+  },
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run bundle",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./server/app.js",
     "bundle": "gulp bundle",
     "bundle-watch": "gulp bundle-watch"
   },
-  "author": "axross <kou@axross.org> (http://axross.me/)",
-  "license": "MIT",
   "dependencies": {
     "bemmer": "0.4.1",
     "body-parser": "1.14.2",
@@ -39,5 +41,7 @@
     "gulp-uglify": "1.5.1",
     "gulp-util": "3.0.7",
     "webpack": "1.12.9"
-  }
+  },
+  "author": "axross <kou@axross.org> (http://axross.me/)",
+  "license": "MIT"
 }
